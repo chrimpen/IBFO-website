@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>International Business & Finance Olympiad (IBFO)</title>
+  <meta name="description" content="The International Business & Finance Olympiad (IBFO) — a global challenge for students in business, finance, and economics." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --blue:#0072CE; --yellow:#F6B40E; --black:#111111; --green:#1BA04B; --red:#D81118;
+      --bg:#ffffff; --text:#1f2937; --muted:#6b7280; --ring: var(--blue);
+      --max:1100px; --radius:16px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    a{color:var(--blue);text-decoration:none}
+    a:hover{text-decoration:underline}
+    img{max-width:100%;height:auto}
+    .container{max-width:var(--max);margin:0 auto;padding:0 20px}
+    header{position:sticky;top:0;z-index:40;background:#fffdd;backdrop-filter:saturate(120%) blur(6px)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;background:rgba(255,255,255,.8)}
+    .nav a.logo{display:flex;align-items:center;gap:12px;font-weight:700;color:var(--black)}
+    .nav img{width:40px;height:40px}
+    .nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
+    .btn{display:inline-block;padding:12px 18px;border-radius:999px;font-weight:700;border:2px solid var(--blue);color:#fff;background:var(--blue)}
+    .btn.secondary{background:transparent;color:var(--blue)}
+    .btn:hover{filter:brightness(.95);text-decoration:none}
+
+    .hero{padding:64px 0 32px;background:radial-gradient(1200px 300px at 50% -50px, rgba(0,114,206,.15), transparent 70%)}
+    .hero .eyebrow{font-weight:700;letter-spacing:.08em;font-size:.9rem;color:var(--muted);text-transform:uppercase}
+    .hero h1{font-size:clamp(2rem,4.5vw,3rem);line-height:1.2;margin:10px 0}
+    .hero p{font-size:1.1rem;color:#374151;max-width:800px}
+    .band{display:flex;gap:10px;align-items:center;margin-top:18px}
+    .dot{width:14px;height:14px;border-radius:50%}
+    .dot.blue{background:var(--blue)}.dot.yellow{background:var(--yellow)}.dot.black{background:var(--black)}.dot.green{background:var(--green)}.dot.red{background:var(--red)}
+
+    section{padding:48px 0;border-top:1px solid #eee}
+    h2{font-size:1.8rem;margin:0 0 14px}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:20px}
+    .card{background:#fff;border:1px solid #eee;border-radius:var(--radius);padding:18px;box-shadow:0 2px 10px rgba(0,0,0,.04)}
+
+    /* Tracks */
+    .tracks .card h3{margin:0 0 6px}
+
+    /* Timeline */
+    .timeline{position:relative;padding-left:26px}
+    .timeline::before{content:"";position:absolute;left:8px;top:0;bottom:0;width:4px;background:linear-gradient(var(--blue),var(--green))}
+    .milestone{position:relative;margin:14px 0;padding:12px 14px;border-radius:12px;background:#fff;border:1px solid #eee}
+    .milestone::before{content:"";position:absolute;left:-22px;top:16px;width:14px;height:14px;border-radius:50%;background:var(--yellow);border:3px solid #fff;box-shadow:0 0 0 2px var(--blue)}
+
+    /* FAQ */
+    details{border:1px solid #eee;border-radius:12px;padding:14px;margin:10px 0;background:#fff}
+    summary{cursor:pointer;font-weight:600}
+
+    /* Footer */
+    footer{background:#0b1220;color:#e5e7eb;padding:40px 0;margin-top:40px}
+    footer a{color:#a5b4fc}
+    .pill{display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border-radius:999px;border:1px solid #ddd}
+
+    /* Responsive */
+    @media (max-width: 900px){
+      .nav ul{display:none}
+      .grid.cols-3{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="logo" href="#">
+        <img src="assets/ibfo-logo.png" alt="IBFO logo" />
+        <span>IBFO</span>
+      </a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#tracks">Tracks</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a class="btn" href="#register">Register</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="eyebrow">International Business & Finance Olympiad</span>
+        <h1>IBFO Winter Challenge</h1>
+        <p>
+          A global competition testing real‑world skills in <strong>Business</strong>, <strong>Finance</strong>, and <strong>Economics</strong>.
+          Open to pre‑university students worldwide. Compete online in multiple rounds
+          and earn international recognition, certificates, and awards.
+        </p>
+        <div class="band" aria-hidden="true">
+          <span class="pill"><span class="dot blue"></span>Business</span>
+          <span class="pill"><span class="dot yellow"></span>Finance</span>
+          <span class="pill"><span class="dot black"></span>Economics</span>
+          <span class="pill"><span class="dot green"></span>Case Studies</span>
+          <span class="pill"><span class="dot red"></span>Global Finals</span>
+        </div>
+        <div style="margin-top:22px;display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn" href="#register">Register now</a>
+          <a class="btn secondary" href="#overview">View overview</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container grid" style="grid-template-columns: 5fr 7fr; gap:28px">
+        <div>
+          <h2>About IBFO</h2>
+          <p>
+            The International Business & Finance Olympiad (IBFO) is an academic challenge designed to
+            inspire the next generation of entrepreneurs, analysts and policy thinkers. The Winter
+            Challenge edition features accessible online qualifiers and a selective final.
+          </p>
+          <ul>
+            <li>Language: English</li>
+            <li>Format: Online qualifiers → Global Finals</li>
+            <li>Target: Secondary & pre‑university students (Grades 8–12 / Year 9–13)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 10px">At a glance</h3>
+          <div class="grid" style="grid-template-columns: repeat(3,1fr); gap:12px">
+            <div class="card" style="padding:12px"><strong>3</strong><br/>Tracks</div>
+            <div class="card" style="padding:12px"><strong>2</strong><br/>Rounds</div>
+            <div class="card" style="padding:12px"><strong>100% online</strong><br/>Proctored Finals</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tracks" class="tracks">
+      <div class="container">
+        <h2>Tracks</h2>
+        <div class="grid cols-3" style="grid-template-columns: repeat(3, 1fr)">
+          <div class="card">
+            <h3>Business</h3>
+            <p>Management, marketing, operations, entrepreneurship. Scenario‑based questions and short cases.</p>
+          </div>
+          <div class="card">
+            <h3>Finance</h3>
+            <p>Time value of money, corporate finance, markets & instruments, basic accounting.</p>
+          </div>
+          <div class="card">
+            <h3>Economics</h3>
+            <p>Micro & macro principles, trade, development, policy applications with graphs and data.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="timeline">
+      <div class="container">
+        <h2>Rounds & Timeline</h2>
+        <div class="timeline">
+          <div class="milestone"><strong>Round 1 — Online Qualifier</strong> · 60 minutes · Multiple‑choice + short answers · Windows: <em>TBA</em></div>
+          <div class="milestone"><strong>Round 2 — Global Finals</strong> · 90 minutes · Case analysis + problem solving · Date: <em>TBA</em></div>
+          <div class="milestone"><strong>Awards Release</strong> · Certificates & rankings sent via email · <em>TBA</em></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="awards">
+      <div class="container">
+        <h2>Awards</h2>
+        <div class="grid cols-3" style="grid-template-columns: repeat(3, 1fr)">
+          <div class="card"><h3>Global Top Awards</h3><p>Gold, Silver, Bronze by overall score.</p></div>
+          <div class="card"><h3>Track Distinctions</h3><p>Best in Business, Finance, Economics.</p></div>
+          <div class="card"><h3>Certificates</h3><p>E‑certificates for all qualifiers; printed for finalists.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="register">
+      <div class="container">
+        <h2>Registration</h2>
+        <p>Registration opens soon. Individual registration is welcome; teachers may also register teams/classes.</p>
+        <div class="card">
+          <div class="grid" style="grid-template-columns: 2fr 3fr; gap:18px">
+            <div>
+              <h3>Fees</h3>
+              <ul>
+                <li>Qualifier: <em>TBA</em></li>
+                <li>Finals: <em>TBA</em></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Get notified</h3>
+              <p>Leave your email and we will inform you as soon as registration opens.</p>
+              <form action="https://example.com/subscribe" method="post" onsubmit="alert('Thanks! We will be in touch.');return false;">
+                <input type="email" name="email" placeholder="Email address" required style="padding:12px;border:1px solid #ddd;border-radius:10px;width:68%"/>
+                <button class="btn" type="submit">Notify me</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <h2>FAQ</h2>
+        <details><summary>Who can participate?</summary><p>Students in secondary or pre‑university education worldwide. No previous olympiad experience required.</p></details>
+        <details><summary>What equipment do I need?</summary><p>A computer with stable internet, webcam for proctoring (finals), and a modern browser.</p></details>
+        <details><summary>What is the syllabus?</summary><p>Fundamental concepts in business, finance, and economics, with emphasis on applied reasoning and data.</p></details>
+        <details><summary>Can schools register groups?</summary><p>Yes. Teachers can submit a roster and receive a consolidated report.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:grid;gap:18px;grid-template-columns:1fr 1fr">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
+          <img src="assets/ibfo-logo.png" alt="IBFO logo" style="width:36px;height:36px"/>
+          <strong>International Business & Finance Olympiad</strong>
+        </div>
+        <div style="color:#94a3b8">© <span id="y"></span> IBFO. All rights reserved.</div>
+      </div>
+      <div style="justify-self:end;align-self:center;display:flex;gap:14px">
+        <a href="#about">About</a>
+        <a href="#register">Register</a>
+        <a href="#faq">FAQ</a>
+        <a href="mailto:info@ibfolympiad.org">Contact</a>
+      </div>
+    </div>
+    <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+  </footer>
+</body>
+</html>
